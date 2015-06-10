@@ -68,6 +68,18 @@
             display: none;
         }
     </style>
+    <script>
+        var map;
+        ymaps.ready(init);
+        function init() {
+             map = new ymaps.Map("map", {
+                center: [56.024721, 92.911886],
+                zoom: 12,
+                autoFitToViewport: 'always',
+                controls: ['fullscreenControl', 'zoomControl']
+            });
+        }
+    </script>
 
 </head>
 <body>
@@ -82,7 +94,7 @@
 
         <p>В последний раз она использовала десятичный код, может это и сегодня поможет? </p>
 
-        <p>Еще было бы хорошо привлечь полицию из США.</p>
+        <p>Связь по рации с ней очень плохая</p>
 
         <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button" id="go">Allons-y</a></p>
     </div>
