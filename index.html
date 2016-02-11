@@ -34,7 +34,7 @@
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <style>
         body {
-            background: #000000 url("http://s.pikabu.ru/post_img/2013/02/02/0/1359751838_345748379.jpg") center center no-repeat;
+            background: #000000 url("/img/love-bg.jpg") center center no-repeat;
             background-size: cover;
         }
 
@@ -73,7 +73,7 @@
         var map;
         ymaps.ready(init);
         function init() {
-             map = new ymaps.Map("map", {
+            map = new ymaps.Map("map", {
                 center: [56.024721, 92.911886],
                 zoom: 12,
                 autoFitToViewport: 'always',
@@ -86,22 +86,16 @@
 <body>
 <div class="container">
     <div class="jumbotron" id="welcome-message">
-        <h1>Выкинь елку</h1>
+        <h1>День омлета за открытку</h1>
 
-        <p>Группа террористов похитила главную елку страны! </p>
-
-        <p>Только вот зачем ее похищать после нового года?</p>
-
-        <p>Может быть найдя елку, вы сможете понять их замысел?</p>
-
-        <p>Известно что преступники используют десятичный код для общения и общаются только по рации</p>
-
+        <p>Нашелся продавец подарка, но нужно его найти.</p>
+        <p>Связь с ним поддерживается только по рации и в десятичном формате</p>
         <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button" id="go">На поиски</a></p>
     </div>
     <form action="index.html" id="form">
         <div class="row" id="search">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Общение с преступниками">
+                <input type="text" class="form-control" placeholder="Общение с продавцом">
       <span class="input-group-btn">
           <input type="submit" class="btn btn-default" value="Отправить"/>
       </span>
@@ -118,10 +112,17 @@
 
 <script src="js/prikvel.min.js"></script>
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-33291919-4', 'auto');
     ga('send', 'pageview');
